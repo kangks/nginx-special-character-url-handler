@@ -52,12 +52,12 @@ location / {
 
 1. Build the Docker image:
    ```bash
-   docker build -t sati -f Dockerfile .
+   docker build -t nginx-reverse-proxy -f Dockerfile .
    ```
 
 2. Run the container:
    ```bash
-   docker run -it --rm -p 80:80 sati
+   docker run -it --rm -p 80:80 nginx-reverse-proxy
    ```
 
 ## Testing the Special Character Handling
